@@ -1,0 +1,70 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+cout<<"=Welcome="<<endl;
+cout<<"1. Cek Saldo"<<endl;
+cout<<"2. Tarik"<<endl;
+cout<<"3. Top Up\n"<<endl;
+int op;
+int a = 5000000;
+int x=50000;
+int y=500000;
+int z=1000000;
+string b;
+int c;
+cin>>op;
+
+switch (op) {  
+    case 1:  
+        cout << "Isi Saldo Anda Saat Ini: "<<a<<endl;  
+        break;  
+    case 2 :  
+    cin>>b;  
+        cout<<"Pilih Jumlah Penarikan"<<endl;  
+        cout<<"1) Rp 50.000"<<endl;  
+        cout<<"2) Rp 500.000"<<endl;  
+        cout<<"3) Rp 1.000.000\n"<<endl;  
+        if (b=="1"){  
+        c=a-x;  
+        cout<<"Saldo Anda: "<<c<<endl;  
+      }  
+      else if (b=="2"){  
+        c=a-y;  
+        cout<<"Saldo Anda: "<<c<<endl;  
+      }  
+      else if (b=="3"){  
+        c=a-z;  
+        cout<<"Saldo Anda: "<<c<<endl;  
+      } else {  
+      cout<<"Kesalahan!"<<endl;  
+    }  
+        break;  
+    case 3 :  
+    cin>>b;  
+        cout<<"Pilih Jumlah Top Up"<<endl;  
+        cout<<"1) Rp 50.000"<<endl;  
+        cout<<"2) Rp 500.000"<<endl;  
+        cout<<"3) Rp 1.000.000\n"<<endl;  
+        if (b=="1"){  
+        c=a+x;  
+        cout<<"Saldo Anda: "<<c<<endl;  
+      }  
+      else if (b=="2"){  
+        c=a+y;  
+        cout<<"Saldo Anda: "<<c<<endl;  
+      }  
+      else if (b=="3"){  
+        c=a+z;  
+        cout<<"Saldo Anda: "<<c<<endl;  
+      } else {  
+      cout<<"Kesalahan!"<<endl;  
+    }  
+        break;  
+        default:  
+          cout<<"Kesalahan!"<<endl;  
+      }  
+
+return 0;
+
+}
